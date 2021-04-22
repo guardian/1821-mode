@@ -2,7 +2,6 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>
             <header style={headerStyle}>
             <h1>The Manchester Guardian.</h1>
             <hr />
@@ -15,14 +14,11 @@ function Header() {
                 </div>
                 <hr style={headerDivider} />
             </header>
-        </div>
     )
 }
 
 
 const headerStyle = {
-    width: '90%',
-    margin: 'auto',
     color: 'transparent',
     textShadow: '0 0 1px rgba(0,0,0,0.9)',
 }

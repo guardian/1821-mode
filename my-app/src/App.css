@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap');
 
 body {
   background-color: #fefefe;
@@ -9,6 +10,7 @@ body {
 p {
   padding: 0px;
   margin: 0px;
+  font-family: 'Newsreader', serif;
 }
 
 h1 {
@@ -21,8 +23,16 @@ h1 {
   margin: 0px;
 }
 
+h2, h3, h4 {
+  font-family: 'Lusitana', serif;
+}
+
 .header-font {
   font-family: 'Lusitana', serif;
+}
+
+a {
+  color: black;
 }
 
 hr {

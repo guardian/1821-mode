@@ -8,12 +8,15 @@ function Header() {
             <hr />
                 <p style={divStyle} class='header-font'>printed in london</p>
                 <hr />
-                <div class={subHeaderStyle}>
-                    <p>No. 1.</p>
-                    <p style={divStyle} class='header-font'>FRIDAY, APRIL 23, 2021.</p>
-                    <p style={divStyle}>price seven-pence</p>
+                <div style={flexContainer}>
+                    <div style={flexItem}>No. 1</div>
+                    <div style={flexItem}>Friday, April 23, 2021.</div>
+                    <div style={flexItem}>Price seven-pence</div>
                 </div>
-                    <hr />
+                <hr />
+
+
+
                 
             </header>
         </div>
@@ -21,17 +24,18 @@ function Header() {
 }
 
 const divStyle = {
-    // color: 'blue',
     fontSize: '20px',
     textAlign: 'center',
     textTransform: 'uppercase',
 };
 
-const subHeaderStyle = {
+const flexContainer = {
     display: 'flex',
-    flexDirection: 'row',
-    // alignItems: 'center',
-    color: 'blue'
+    flexWrap: 'nowrap',
+}
+
+const flexItem = {
+    flex: '1'
 }
 
 export default Header

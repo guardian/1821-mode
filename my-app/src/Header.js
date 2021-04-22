@@ -5,7 +5,7 @@ function Header() {
             <header style={headerStyle}>
             <h1>The Manchester Guardian.</h1>
             <hr />
-                <p style={sectionOne} class='header-font'>London: Compiled and Published by K. VINER, No. 90, York Way.</p>
+                <p style={sectionOne} class='header-font'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
                 <hr style={headerDivider} />
                 <div style={flexContainer} class='header-font'>
                     <div style={flexItem}><p>No. 1.</p></div>
@@ -21,6 +21,7 @@ function Header() {
 const headerStyle = {
     color: 'transparent',
     textShadow: '0 0 1px rgba(0,0,0,0.9)',
+    paddingBottom: '10px',
 }
 
 const sectionOne = {

@@ -8,6 +8,7 @@ function Columns() {
             <Api article="uk-news/2021/apr/22/minister-apologises-for-black-and-asian-war-dead-commemoration-failures"/>
             <img src="https://audioxide-wiki.neocities.org/Images/ad1.png" alt="Old fashioned advert" />
             <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" />
+            <img src="https://audioxide-wiki.neocities.org/Images/ad2.png" alt="Old fashioned advert" />
             <Api article="environment/2021/apr/22/boris-johnson-urges-leaders-to-get-serious-at-climate-summit" />
 
         </div>
@@ -16,7 +17,6 @@ function Columns() {
 
 const columnContainer = {
     columnCount: '6',
-    height: '800px',
 }
 
 export default Columns

@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
 
 body {
   background-color: #fefefe;
   background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+}
+
+p, h1, h2, h3, h4, h5, h6, h7 {
+  padding: 0px;
+  margin: 0px;
+}
+
+h2, h3, h4, h5, h6, h7 {
+  font-family: 'Lusitana', serif;
+  font-weight: 700;
 }
 
 p {
@@ -23,6 +33,14 @@ h1 {
   margin: 0px;
 }
 
+h2 {
+  font-size: 1.3em;
+  line-height: 1.2;
+  padding-bottom: .5em;
+  color: transparent;
+  text-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
 figure {
   display:none;
 }
@@ -33,10 +51,6 @@ figure {
 
 .block-title {
   display:none;
-}
-
-h2, h3, h4 {
-  font-family: 'Lusitana', serif;
 }
 
 .header-font {
@@ -50,4 +64,13 @@ a {
 hr {
   border: 0.5px solid darkgray;
   /* box-shadow: 0 0 .5px rgba(0,0,0,0.9); */
+}
+
+.story-copy {
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+  padding: 10px 0px;
 }

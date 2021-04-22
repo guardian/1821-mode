@@ -27,8 +27,8 @@ function Api(props) {
     return (
         <div>
             <h2>{ReactHtmlParser(title)}</h2>
-            <p>{ReactHtmlParser(body)}</p>
-            <hr></hr>
+            <p class="story-copy">{ReactHtmlParser(body)}</p>
+            <hr />
         </div>
     )
 } 

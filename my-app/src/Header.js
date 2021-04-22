@@ -6,7 +6,7 @@ function Header() {
             <header>
             <h1>The Manchester Guardian.</h1>
             <hr />
-                <p style={divStyle} class='header-font'>printed in london</p>
+                <p style={sectionOne} class='header-font'>London: Compiled and Published by K. VINER, No. 90, York Way.</p>
                 <hr />
                 <div style={flexContainer}>
                     <div style={flexItem}>No. 1</div>
@@ -14,19 +14,17 @@ function Header() {
                     <div style={flexItem}>Price seven-pence</div>
                 </div>
                 <hr />
-
-
-
-                
             </header>
         </div>
     )
 }
 
-const divStyle = {
+const sectionOne = {
     fontSize: '20px',
     textAlign: 'center',
-    textTransform: 'uppercase',
+    fontStyle: 'italic',
+    color: 'transparent',
+    textShadow: '0 0 1px rgba(0,0,0,0.9)',
 };
 
 const flexContainer = {

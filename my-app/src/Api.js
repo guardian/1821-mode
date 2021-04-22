@@ -18,11 +18,12 @@ function Api() {
 
     useEffect(() => {
     getNews().then(n => {
-        setResult(n.response.content.webTitle +n.response.content.fields.body)
+        var title = "<h2>" + n.response.content.webTitle + "</h2>"
+        setResult(title +n.response.content.fields.body +n.response.content.fields.body +n.response.content.fields.body +n.response.content.fields.body)
     })})
     return (
         <div>
-            <h4>{ReactHtmlParser(result)}</h4>
+            <p>{ReactHtmlParser(result)}</p>
         </div>
     )
 } 

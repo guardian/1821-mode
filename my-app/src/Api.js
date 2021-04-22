@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
 
-const apiKey = '2788365f-9557-4a3d-8c5a-8e4a89f85a31'
+const apiKey = 'fa7a2b96-0cb9-4da8-b684-c33cad253d0d'
 
 //const api = new Guardian(apiKey, false);
-const apiUrl = "https://content.guardianapis.com/business/2014/feb/18/uk-inflation-falls-below-bank-england-target?show-fields=body"
+const apiUrl = "https://content.guardianapis.com/uk-news/2021/apr/22/45bn-covid-recovery-plan-at-heart-of-scottish-labour-manifesto?show-fields=body"
 
 async function getNews() {
     return await fetch(apiUrl + "&api-key="+ apiKey)
@@ -18,12 +18,14 @@ function Api() {
 
     useEffect(() => {
     getNews().then(n => {
-        var title = "<h2>" + n.response.content.webTitle + "</h2>"
-        setResult(title +n.response.content.fields.body +n.response.content.fields.body +n.response.content.fields.body +n.response.content.fields.body)
+       // var title = "<h2>" + n.response.content.webTitle + "</h2>"
+        //var body = n.response.content.fields.body
+        setResult(n)
     })})
     return (
         <div>
-            <p>{ReactHtmlParser(result)}</p>
+            <h2>{ReactHtmlParser(result.response.content.webTitle)}</h2>
+            <p>{ReactHtmlParser(result.response.content.fields.body)}</p>
         </div>
     )
 } 

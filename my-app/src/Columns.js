@@ -10,7 +10,7 @@ function Columns() {
             <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" />
             <img src="https://audioxide-wiki.neocities.org/Images/ad2.png" alt="Old fashioned advert" />
             <Api article="environment/2021/apr/22/boris-johnson-urges-leaders-to-get-serious-at-climate-summit" />
-
+            <img src="https://audioxide-wiki.neocities.org/Images/ad3.png" alt="Old fashioned advert" />
         </div>
     )
 }

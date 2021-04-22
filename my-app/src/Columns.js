@@ -14,8 +14,8 @@ function Columns() {
 }
 
 const columnContainer = {
-    columnCount: '6',
-    height: '800px',
+    columnCount: '6'
+  
 }
 
 export default Columns

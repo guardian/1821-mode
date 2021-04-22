@@ -17,6 +17,23 @@ h2, h3, h4, h5, h6, h7 {
   font-weight: 700;
 }
 
+.filtered {
+
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 2px;
+    background-image: 
+        radial-gradient(ellipse, #0000, #0007),
+        linear-gradient(0deg, #9725, #9725),
+        url(https://i.ibb.co/vJt5HSh/noisy-texture-300x300-o10-d10-c-a82851-t1.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    filter: blur(0.05em) saturate(0.0) contrast(1.8) brightness(1.2);
+
+}
+
 p {
   padding: 0px;
   margin: 0px;

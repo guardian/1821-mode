@@ -7,7 +7,7 @@ const guardianApi = 'https://content.guardianapis.com/'
 //const api = new Guardian(apiKey, false);
 
 async function getNews(id) {
-    return await fetch(guardianApi + id + "?show-fields=body&api-key="+ apiKey)
+    return await fetch(guardianApi + id + "?show-fields=body,thumbnail&api-key="+ apiKey)
     .then(res =>  res.json())
 }
 
@@ -15,6 +15,7 @@ function Api(props) {
     
     const [title, setTitle] = useState(0)
     const [body, setBody] = useState(0)
+    const [thumbnail, setThumbnail] = useState(0)
 
     useEffect(() => {
     getNews(props.article).then(n => {
@@ -22,11 +23,16 @@ function Api(props) {
         setBody(props.percentage
             ? n.response.content.fields.body.substring(0, (props.percentage * n.response.content.fields.body.length) / 100 ) + "..."
             : n.response.content.fields.body)
+        setThumbnail(props.thumbnail === "yes"
+        ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
+        : "")
+        
     })}, [])
 
     return (
         <div>
             <h2>{ReactHtmlParser(title)}</h2>
+            {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
             <hr />
         </div>

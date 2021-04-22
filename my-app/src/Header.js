@@ -1,6 +1,12 @@
 import React from 'react'
 
 function Header() {
+    var d = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let day = days[d.getDay()].toUpperCase()
+    let month = months[d.getMonth()].toUpperCase()
     return (
             <header style={headerStyle}>
             <h1>The Manchester Guardian.</h1>
@@ -9,7 +15,7 @@ function Header() {
                 <hr style={headerDivider} />
                 <div style={flexContainer} class='header-font'>
                     <div style={flexItem}><p>No. 1.</p></div>
-                    <div style={flexItem}><p style={{textAlign: 'center'}}>FRIDAY, APRIL 23, 2021.</p></div>
+                    <div style={flexItem}><p style={{textAlign: 'center'}}>{day + ", "+ month+" " + d.getDate()+", "+d.getFullYear()}</p></div>
                     <div style={flexItem}><p style={{textAlign: 'right'}}>Price seven-pence</p></div>
                 </div>
                 <hr style={headerDivider} />

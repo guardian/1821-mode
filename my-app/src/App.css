@@ -26,6 +26,6 @@ h1 {
 }
 
 hr {
-  border: 0.5px solid #202124;
+  border: 0.5px solid darkgray;
   /* box-shadow: 0 0 .5px rgba(0,0,0,0.9); */
 }

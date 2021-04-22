@@ -7,13 +7,13 @@ function Header() {
             <h1>The Manchester Guardian.</h1>
             <hr />
                 <p style={sectionOne} class='header-font'>London: Compiled and Published by K. VINER, No. 90, York Way.</p>
-                <hr />
+                <hr style={headerDivider} />
                 <div style={flexContainer} class='header-font'>
                     <div style={flexItem}><p>No. 1.</p></div>
                     <div style={flexItem}><p style={{textAlign: 'center'}}>FRIDAY, APRIL 23, 2021.</p></div>
                     <div style={flexItem}><p style={{textAlign: 'right'}}>Price seven-pence</p></div>
                 </div>
-                <hr />
+                <hr style={headerDivider} />
             </header>
         </div>
     )
@@ -28,7 +28,7 @@ const headerStyle = {
 }
 
 const sectionOne = {
-    fontSize: '20px',
+    fontSize: '15px',
     textAlign: 'center',
     fontStyle: 'italic',
     color: 'transparent',
@@ -44,6 +44,10 @@ const flexContainer = {
 
 const flexItem = {
     flex: '1'
+}
+
+const headerDivider = {
+    border: '2px solid darkgray',
 }
 
 export default Header

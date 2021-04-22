@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap');
 
 h1 {
   font-family: 'UnifrakturCook', cursive;
   text-align: center;
   font-size: 60px;
+  color: transparent;
+  text-shadow: 0 0 2px rgba(0,0,0,0.9);
 }
 
 body {
   background-color: #fefefe;
   background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+}
+
+.header-font {
+  font-family: 'Lusitana', serif;
 }

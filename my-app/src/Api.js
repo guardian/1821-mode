@@ -1,5 +1,7 @@
 // import Guardian from 'guardian-js';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import ReactHtmlParser from 'react-html-parser';
+
 const apiKey = 'gnm-hackday-21'
 
 //const api = new Guardian(apiKey, false);
@@ -13,15 +15,14 @@ async function getNews() {
 function Api() {
     
     const [result, setResult] = useState(0)
+
+    useEffect(() => {
     getNews().then(n => {
-        let stringified = JSON.stringify(n)
-        let obj = JSON.parse(stringified)
-        console.log(obj)
-        setResult(obj.response.content.webTitle + obj.response.content.fields.body)
-    })
+        setResult(n.response.content.webTitle +n.response.content.fields.body)
+    })})
     return (
         <div>
-            <h1>{result}</h1>
+            <h4>{ReactHtmlParser(result)}</h4>
         </div>
     )
 } 

@@ -5,3 +5,8 @@ h1 {
   text-align: center;
   font-size: 60px;
 }
+
+body {
+  background-color: #fefefe;
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+}

@@ -5,7 +5,8 @@ import Api from './Api.js';
 function Columns() {
     return (
         <div style={columnContainer}>
-            <Api />
+            <Api article="uk-news/2021/apr/22/minister-apologises-for-black-and-asian-war-dead-commemoration-failures"/>
+            <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" />
         </div>
     )
 }

@@ -12,8 +12,7 @@ function Columns() {
             <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" percentage="70" />
             <hr />
             <img src="https://audioxide-wiki.neocities.org/Images/ad2.png" alt="Old fashioned advert" />
-            <hr />
-            <Api article="environment/2021/apr/22/boris-johnson-urges-leaders-to-get-serious-at-climate-summit" percentage="60" />
+            <Api article="environment/2021/apr/22/boris-johnson-urges-leaders-to-get-serious-at-climate-summit" percentage="40" />
             <hr />
             <img src="https://audioxide-wiki.neocities.org/Images/stevebell.png" alt="Old fashioned advert" />
             <hr />

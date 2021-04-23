@@ -87,6 +87,11 @@ ul {
     font-family: 'IM Fell English', serif;
 }
 
+.footer-font {
+    font-family: 'IM Fell English', serif;
+    padding: 30px;
+}
+
 a {
   color: black;
 }

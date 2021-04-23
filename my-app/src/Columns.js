@@ -4,7 +4,7 @@ import Api from './Api.js';
 
 function Columns() {
     return (
-        <div style={columnContainer}>
+        <div class="column-container">
             <Api article="artanddesign/2021/apr/23/damn-this-is-a-caravaggio-the-inside-story-of-an-old-master-found-in-spain" percentage="60" thumbnail="yes" />
             <hr />
             <img src="https://audioxide-wiki.neocities.org/Images/stevebell.png" alt="Old fashioned advert" />
@@ -24,10 +24,6 @@ function Columns() {
             <Api article="technology/2021/apr/22/ransomware-hackers-steal-plans-upcoming-apple-products" thumbnail="yes"/>
         </div>
     )
-}
-
-const columnContainer = {
-    columnCount: '6',
 }
 
 export default Columns

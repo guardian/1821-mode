@@ -31,7 +31,7 @@ const headerStyle = {
 }
 
 const sectionOne = {
-    fontSize: '16px',
+    fontSize: '17px',
     textAlign: 'center',
     fontStyle: 'italic',
     color: 'transparent',

@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer style={footerStyle}>
             <hr />
-            <p class='footer-font'>Guardian News & Media, 1821-2021.</p>
+            <p class='footer-font'>1821-2021 Guardian News & Media Limited or its affiliated companies. All rights reserved.</p>
         </footer>
     )
 }

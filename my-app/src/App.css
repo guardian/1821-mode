@@ -37,7 +37,7 @@ h2 a {
     background-repeat: repeat;
     background-position: center;
     filter: blur(0.05em) saturate(0.0) contrast(1.8) brightness(1.2) grayscale(100%);
-    margin-bottom:5px;
+    margin-bottom: 15px;
 
 }
 
@@ -52,11 +52,15 @@ p {
 h1 {
   font-family: 'UnifrakturCook', cursive;
   text-align: center;
-  font-size: 80px;
+  font-size: 90px;
   color: transparent;
   text-shadow: 0 0 1px rgba(0,0,0,0.9);
-  padding: 20px;
+  padding: 25px 0 10px;
   margin: 0px;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 h2 {
@@ -112,6 +116,7 @@ hr {
 .story-copy {
   text-align: justify;
     text-indent: 2em;
+    hyphens: auto;
 }
 
 img {

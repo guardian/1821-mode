@@ -9,7 +9,7 @@ function Header() {
     let month = months[d.getMonth()].toUpperCase()
     return (
             <header style={headerStyle}>
-            <h1>The Manchester Guardian.</h1>
+            <h1><a href="/">The Manchester Guardian.</a></h1>
             <hr />
                 <p style={sectionOne} class='header-font'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
                 <hr style={headerDivider} />

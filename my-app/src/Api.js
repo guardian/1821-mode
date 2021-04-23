@@ -31,12 +31,12 @@ function Api(props) {
             : "")
             
     })}, [])
-
+    let art = "/article?id="
     return (
   
         <div>
             
-            <h2><Link to="/article">{title}</Link></h2>
+            <h2><Link to={art+props.article}>{title}</Link></h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
         </div>
@@ -46,3 +46,5 @@ function Api(props) {
 
 
 export default Api
+export { getNews }
+export { apiKey, guardianApi }

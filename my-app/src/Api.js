@@ -19,7 +19,7 @@ function Api(props) {
 
     useEffect(() => {
     getNews(props.article).then(n => {
-        setTitle(n.response.content.webTitle)
+        setTitle(n.response.content.webTitle.replace("Damn", "By golly"))
         setBody(props.percentage
             ? n.response.content.fields.body.substring(0, (props.percentage * n.response.content.fields.body.length) / 100 ) + "..."
             : n.response.content.fields.body)

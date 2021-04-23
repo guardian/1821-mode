@@ -14,9 +14,9 @@ function Header() {
                 <p style={sectionOne} class='header-font'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
                 <hr style={headerDivider} />
                 <div style={flexContainer} class='header-font'>
-                    <div style={flexItem}><p>No. 1.</p></div>
-                    <div style={flexItem}><p style={{textAlign: 'center'}}>{day + ", "+ month+" " + d.getDate()+", "+d.getFullYear()}</p></div>
-                    <div style={flexItem}><p style={{textAlign: 'right'}}>Price seven-pence</p></div>
+                    <div style={flexItem}><p class="small-caps" >No. 68,082.</p></div>
+                    <div style={flexItem}><p style={{textAlign: 'center'}} class="small-caps" >{day + ", "+ month+" " + d.getDate()+", "+d.getFullYear()}</p></div>
+                    <div style={flexItem}><p style={{textAlign: 'right'}} class="small-caps" >Price varies</p></div>
                 </div>
                 <hr style={headerDivider} />
             </header>
@@ -31,7 +31,7 @@ const headerStyle = {
 }
 
 const sectionOne = {
-    fontSize: '15px',
+    fontSize: '16px',
     textAlign: 'center',
     fontStyle: 'italic',
     color: 'transparent',

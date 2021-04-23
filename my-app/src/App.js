@@ -1,13 +1,13 @@
 import './App.css';
 import Header from './Header.js';
-import Api from './Api.js';
+import Columns from './Columns';
 
 function App() {
   return (
     <div className="App">
         <main style={homeMain}>
           <Header />
-          <Api />
+            <Columns />
         </main>
     </div>
   );

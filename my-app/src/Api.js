@@ -1,6 +1,9 @@
 // import Guardian from 'guardian-js';
 import React, { useEffect, useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import { Link, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 const apiKey = 'fa7a2b96-0cb9-4da8-b684-c33cad253d0d'
 const guardianApi = 'https://content.guardianapis.com/'
@@ -30,11 +33,14 @@ function Api(props) {
     })}, [])
 
     return (
+  
         <div>
-            <h2>{ReactHtmlParser(title)}</h2>
+            
+            <h2><Link to="/Article">{ReactHtmlParser(title)}</Link></h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
         </div>
+   
     )
 } 
 

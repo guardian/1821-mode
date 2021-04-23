@@ -75,6 +75,10 @@ figure {
   display:none;
 }
 
+.element, .element-rich-link, .element--thumbnail {
+  display: none;
+}
+
 .header-font {
     font-family: 'IM Fell English', serif;
 }

@@ -24,9 +24,9 @@ function Api(props) {
             ? n.response.content.fields.body.substring(0, (props.percentage * n.response.content.fields.body.length) / 100 ) + "..."
             : n.response.content.fields.body)
         setThumbnail(props.thumbnail === "yes"
-        ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
-        : "")
-        
+            ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
+            : "")
+            
     })}, [])
 
     return (
@@ -34,6 +34,7 @@ function Api(props) {
             <h2>{ReactHtmlParser(title)}</h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
+            <hr />
         </div>
     )
 } 

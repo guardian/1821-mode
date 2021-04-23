@@ -36,7 +36,7 @@ function Api(props) {
   
         <div>
             
-            <h2><Link to="/Article">{ReactHtmlParser(title)}</Link></h2>
+            <h2><Link to="/article">{title}</Link></h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
         </div>

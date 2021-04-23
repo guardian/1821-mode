@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import { Api, getNews, guardianApi, apiKey } from './Api.js';
+import ReactHtmlParser from 'react-html-parser';
 import Header from './Header.js'
 import Footer from './Footer.js'
 
@@ -30,7 +31,8 @@ function Article(props) {
         <main style={homeMain}>
         <Header />
         <div style={columnContainer}>
-            {body}
+            <h2 style={articleTitle}>{ReactHtmlParser(title)}</h2>
+            <p style={articleCopy}>{ReactHtmlParser(body)}</p>
           </div>
           <Footer />
       </main>
@@ -42,7 +44,19 @@ const homeMain = {
     width: '90%',
 }
 const columnContainer = {
-    columnCount: '2',
+    width: '40%',
+    margin: 'auto',
+}
+
+const articleTitle = {
+    fontSize: '30px',
+    padding: '20px 0px',
+}
+
+const articleCopy = {
+    fontSize: '1.1em',
+    lineHeight: '1.1',
+    textIndent: '1em',
 }
 
 export default Article

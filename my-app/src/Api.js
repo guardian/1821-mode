@@ -24,22 +24,25 @@ function Api(props) {
     const [body, setBody] = useState(0)
     const [thumbnail, setThumbnail] = useState(0)
 
+    // TODO: replace modern expressions with 19th century equivalents. 
     useEffect(() => {
     getNews(props.article).then(n => {
-        setTitle(n.response.content.webTitle.replace("Damn", "By golly"))
-        setBody(props.percentage
-            ? n.response.content.fields.body.substring(0, (props.percentage * n.response.content.fields.body.length) / 100 ) + "..."
-            : n.response.content.fields.body)
-        setThumbnail(props.thumbnail === "yes"
+        const title = n.response.content.webTitle
+        const bodyReponse = n.response.content.fields.body
+        const body = props.percentage
+            ? bodyReponse.substring(0, (props.percentage * bodyReponse.length) / 100 ) + "<br>Continue reading..."
+            : bodyReponse
+        const thumbnail = props.thumbnail === "yes"
             ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
-            : "")
+            : ""
+        setTitle(title)
+        setBody(body)
+        setThumbnail(thumbnail)
             
     })}, [])
     let art = "/article?id="
     return (
-  
         <div>
-            
             <h2><Link to={art+props.article}>{title}</Link></h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>

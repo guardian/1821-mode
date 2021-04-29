@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import { Link, withRouter } from "react-router-dom";
-
 
 const apiKey = 'fa7a2b96-0cb9-4da8-b684-c33cad253d0d'
 const guardianApi = 'https://content.guardianapis.com/'
@@ -18,11 +16,18 @@ async function getNews(id) {
     .then(res =>  res.json())
 }
 
+const trimArticle = (body, percent) => {
+    body.substring(0, (percent * body.length) / 100 )
+}
+
 function Api(props) {
     
     const [title, setTitle] = useState(0)
     const [body, setBody] = useState(0)
     const [thumbnail, setThumbnail] = useState(0)
+
+    const link = "https://www.theguardian.com/" + props.article
+
 
     // TODO: replace modern expressions with 19th century equivalents. 
     useEffect(() => {
@@ -30,7 +35,7 @@ function Api(props) {
         const title = n.response.content.webTitle
         const bodyReponse = n.response.content.fields.body
         const body = props.percentage
-            ? bodyReponse.substring(0, (props.percentage * bodyReponse.length) / 100 ) + "<br>Continue reading..."
+            ? trimArticle(bodyResponse, props.percentage) + "<p class=\"continue-reading\"><a href=\""+ link +"\">Continue reading...</a></p>"
             : bodyReponse
         const thumbnail = props.thumbnail === "yes"
             ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
@@ -40,10 +45,11 @@ function Api(props) {
         setThumbnail(thumbnail)
             
     })}, [])
-    let art = "/article?id="
+    
+
     return (
         <div>
-            <h2><Link to={art+props.article}>{title}</Link></h2>
+            <h2><a href={link}>{title}</a></h2>
             {ReactHtmlParser(thumbnail)}
             <p class="story-copy">{ReactHtmlParser(body)}</p>
         </div>

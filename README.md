@@ -18,5 +18,5 @@ Example:
 ```
 
 ## Deployment 
-* The app is currently hosted on surge(http://surge.sh) with the domain 1821.surge.sh.
+* The app is currently hosted on surge(http://surge.sh) with the domain `1821.surge.sh`
 * In order to deploy any changes made to the app, run `npm build` -> `cd build` -> `echo 1821.surge.sh >CNAME` -> `surge .`

@@ -8,7 +8,7 @@
 - [x] Write what components do
 
 ## What is this all about?
-* 2021 May marks the Guardian's 200 year birthday! For the occasion, the four fellows at the Product & Engineering department decided to create a 1821 version of the Guardian front page during the Hack day in April 2021 (Link to presentation (https://docs.google.com/presentation/d/1jJJoXGOCS6QAHFIg8j8mzQeuLKMSzdEK9wU6XEl9dBE/edit#slide=id.p). The idea won the Best Conceptual Hack category!
+* 2021 May marks the Guardian's 200 year birthday! For the occasion, the four fellows at the Product & Engineering department decided to create a 1821 version of the Guardian front page during the Hack day in April 2021 [Hack Day Presentation link](https://docs.google.com/presentation/d/1jJJoXGOCS6QAHFIg8j8mzQeuLKMSzdEK9wU6XEl9dBE/edit#slide=id.p). The idea won the Best Conceptual Hack category!
 * The articles are sourced from the Guardian's Content API. We used React to style the page. We then added old ads to give the 19th century look & feel to it.
 
 ## Components

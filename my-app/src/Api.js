@@ -17,7 +17,15 @@ async function getNews(id) {
 }
 
 const trimArticle = (body, percent) => {
-    body.substring(0, (percent * body.length) / 100 )
+    return body.substring(0, (percent * body.length) / 100 )
+}
+
+const continueReading = (articleID) => {
+    return `<p class="continue-reading"><a href="${articleID}">Continue reading...</a></p>`
+}
+
+const showThumbnail = (thumbnailUrl) => {
+    return `<div class="filtered" style="background-image:url('${thumbnailUrl}')" alt="Thumbnail"></div>`
 }
 
 function Api(props) {
@@ -32,14 +40,14 @@ function Api(props) {
     // TODO: replace modern expressions with 19th century equivalents. 
     useEffect(() => {
     getNews(props.article).then(n => {
+
+        // extract content from the API response
         const title = n.response.content.webTitle
-        const bodyReponse = n.response.content.fields.body
-        const body = props.percentage
-            ? trimArticle(bodyResponse, props.percentage) + "<p class=\"continue-reading\"><a href=\""+ link +"\">Continue reading...</a></p>"
-            : bodyReponse
-        const thumbnail = props.thumbnail === "yes"
-            ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
-            : ""
+        const bodyResponse = n.response.content.fields.body
+        const thumbnailResponse = n.response.content.fields.thumbnail
+        const body = props.percentage ? trimArticle(bodyResponse, props.percentage) + continueReading(link) : bodyResponse
+        const thumbnail = props.thumbnail === "yes" ? showThumbnail(thumbnailResponse) : ""
+
         setTitle(title)
         setBody(body)
         setThumbnail(thumbnail)
@@ -56,7 +64,6 @@ function Api(props) {
    
     )
 } 
-
 
 export default Api
 export { getNews }

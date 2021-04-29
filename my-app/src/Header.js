@@ -9,11 +9,11 @@ function Header() {
     let month = months[d.getMonth()].toUpperCase()
     return (
             <header style={headerStyle}>
-            <h1><a href="/">The Manchester Guardian.</a></h1>
+            <h1>The Manchester Guardian.</h1>
             <hr />
-                <p style={sectionOne} class='header-font'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
+                <p style={sectionOne} className='header-part-one'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
                 <hr style={headerDivider} />
-                <div style={flexContainer} class='header-font'>
+                <div style={flexContainer} className='header-part-two'>
                     <div style={flexItem}><p class="small-caps" >No. 68, 082.</p></div>
                     <div style={flexItem}><p style={{textAlign: 'center'}} class="small-caps" >{day + ", "+ month+" " + d.getDate()+", "+d.getFullYear()}</p></div>
                     <div style={flexItem}><p style={{textAlign: 'right'}} class="small-caps" >Price varies</p></div>
@@ -31,7 +31,6 @@ const headerStyle = {
 }
 
 const sectionOne = {
-    fontSize: '17px',
     textAlign: 'center',
     fontStyle: 'italic',
     color: 'transparent',
@@ -41,7 +40,6 @@ const sectionOne = {
 const flexContainer = {
     display: 'flex',
     flexWrap: 'nowrap',
-    fontSize: '20px',
     fontWeight: 'bold',
 }
 
@@ -50,7 +48,7 @@ const flexItem = {
 }
 
 const headerDivider = {
-    border: '2px solid darkgray',
+    border: '2px solid gray',
 }
 
 export default Header

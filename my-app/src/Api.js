@@ -46,7 +46,7 @@ function Api(props) {
   }, []);
 
   return (
-    <div>
+    <div class="story">
       <h2>
         <a href={link}>{title}</a>
       </h2>

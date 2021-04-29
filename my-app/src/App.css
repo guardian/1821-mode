@@ -4,14 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&display=swap');
 
+/* DEFAULT STYLING (MOBILE) */
+
 body {
   background-color: #fefefe;
-  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  background-image: url("./Images/ExclusivePaper.png");
 }
 
 p, h1, h2, h3, h4, h5, h6, h7 {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 h2, h3, h4, h5, h6, h7 {
@@ -19,8 +21,20 @@ h2, h3, h4, h5, h6, h7 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 0.9em;
+    line-height: 1.2;
+    padding-bottom: .5em;
+    color: transparent;
+    text-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
 h2 a {
     text-decoration: none;
+}
+
+h2 a:hover {
+    opacity: 0.7;
 }
 
 .filtered {
@@ -40,34 +54,91 @@ h2 a {
 }
 
 p {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: 'Newsreader', serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.8em;
 }
+
+a {
+    color: black;
+}
+
+hr {
+    border: 0.5px solid gray;
+}
+
+.story {
+    padding: 0 0 .5em 0;
+}
+
+.story-copy {
+    text-align: justify;
+    text-indent: 2em;
+    hyphens: auto;
+}
+
+.contribution-cta {
+    opacity: 1;
+}
+
+.contribution-cta:hover {
+    opacity: 0.8;
+}
+
+img {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.continue-reading {
+    font-family: 'IM Fell English SC', serif;
+    padding: 0.5em 0;
+    font-weight: 700;
+}
+
+.continue-reading:hover {
+    opacity: 0.8;
+}
+
+/* HEADER */
 
 h1 {
   font-family: 'UnifrakturCook', cursive;
   text-align: center;
-  font-size: 90px;
+  font-size: 1.8em;
   color: transparent;
   text-shadow: 0 0 1px rgba(0,0,0,0.9);
-  padding: 25px 0px 10px 0px;
-  margin: 0px;
+  padding: 25px 0 10px 0;
+  margin: 0;
 }
 
 h1 a {
     text-decoration: none;
 }
 
-h2 {
-  font-size: 1.3em;
-  line-height: 1.2;
-  padding-bottom: .5em;
-  color: transparent;
-  text-shadow: 0 0 1px rgba(0,0,0,0.9);
+.header-part-one {
+    font-family: 'IM Fell English', serif;
+    font-size: 0.5em;
 }
+.header-part-two {
+    font-size: 0.7em;
+}
+
+.small-caps {
+    font-family: 'IM Fell English SC', serif;
+}
+
+/* FOOTER */
+
+.footer-font {
+    font-family: 'IM Fell English', serif;
+    font-size: 0.7em;
+    padding: 1em;
+}
+
+/* HIDDEN ELEMENTS */
 
 figure {
   display:none;
@@ -89,53 +160,60 @@ ul {
   display: none;
 }
 
-.header-font {
-    font-family: 'IM Fell English', serif;
-}
-
-.footer-font {
-    font-family: 'IM Fell English', serif;
-    padding: 30px;
-}
-
-a {
-  color: black;
-}
-
-hr {
-  border: 0.5px solid darkgray;
-  /* box-shadow: 0 0 .5px rgba(0,0,0,0.9); */
-}
-
-.small-caps {
-    font-family: 'IM Fell English SC', serif;
-}
-
-.story-copy {
-  text-align: justify;
-    text-indent: 2em;
-    hyphens: auto;
-}
-
-.contribution-cta {
-    opacity: 1;
-}
-
-.contribution-cta:hover {
-    opacity: 0.8;
-}
-
-img {
-  width: 100%;
-  padding: 10px 0px;
-}
+/* RESPONSIVE STYLING */
 
 .column-container {
-  column-count: 6;
+    column-count: 2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 480px) {
     .column-container {
-        column-count: 2;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .column-container {
+        column-count: 4;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .header-part-one {
+        font-size: 0.8em;
+    }
+    .header-part-two {
+        font-size: 1.1em;
+    }
+    .footer-font {
+        font-size: 0.9em;
+        padding: 2em 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .column-container {
+        column-count: 6;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .header-part-one {
+        font-size: 1em;
+    }
+    .header-part-two {
+        font-size: 1.2em;
     }
 }

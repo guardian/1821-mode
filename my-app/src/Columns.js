@@ -13,7 +13,7 @@ function Columns() {
         <div class="column-container">
             <Api article="artanddesign/2021/apr/23/damn-this-is-a-caravaggio-the-inside-story-of-an-old-master-found-in-spain" percentage="60" />
                 <hr />
-            <a href="https://support.theguardian.com/" target="_blank"><img className="contribution-cta" src={HopeIsPower} alt="Old fashioned advert" /></a>
+            <a href="https://support.theguardian.com/" target="_blank" rel="noreferrer"><img className="contribution-cta" src={HopeIsPower} alt="Old fashioned advert" /></a>
              <hr />
             <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" percentage="100" />
             <hr />

@@ -4,7 +4,7 @@
 
 - [ ] What is this all about?
 - [ ] How to run the app locally
-- [ ] How it's deployed
+- [x] How it's deployed
 - [x] Write what components do
 
 ## Components

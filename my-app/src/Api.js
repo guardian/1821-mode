@@ -1,50 +1,60 @@
-// import Guardian from 'guardian-js';
-import React, { useEffect, useState } from 'react';
-import ReactHtmlParser from 'react-html-parser';
-import { Link, withRouter } from "react-router-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import ReactHtmlParser from "react-html-parser";
 
+const apiKey = "fa7a2b96-0cb9-4da8-b684-c33cad253d0d";
+const guardianApi = "https://content.guardianapis.com/";
 
-const apiKey = 'fa7a2b96-0cb9-4da8-b684-c33cad253d0d'
-const guardianApi = 'https://content.guardianapis.com/'
-//const api = new Guardian(apiKey, false);
+// Fields to show in the API response. Documentation can be found here:
+// https://open-platform.theguardian.com/documentation/item
+// Append other fields to articleFields if needed
+const articleFields = ["body"]; 
+const showFields = (fields) => fields.join(",");
+const fieldsToShow = showFields(articleFields);
 
 async function getNews(id) {
-    return await fetch(guardianApi + id + "?show-fields=body,thumbnail&api-key="+ apiKey)
-    .then(res =>  res.json())
+  return await fetch(
+    guardianApi + id + "?show-fields=" + fieldsToShow + "&api-key=" + apiKey
+  ).then((res) => res.json());
 }
 
+const trimArticle = (body, percent) => {
+  return body.substring(0, (percent * body.length) / 100);
+};
+
+const continueReading = (articleID) => {
+  return `<p class="continue-reading"><a href="${articleID}">Continue reading...</a></p>`;
+};
+
 function Api(props) {
-    
-    const [title, setTitle] = useState(0)
-    const [body, setBody] = useState(0)
-    const [thumbnail, setThumbnail] = useState(0)
+  const [title, setTitle] = useState(0);
+  const [body, setBody] = useState(0);
+  const link = "https://www.theguardian.com/" + props.article;
 
-    useEffect(() => {
-    getNews(props.article).then(n => {
-        setTitle(n.response.content.webTitle.replace("Damn", "By golly"))
-        setBody(props.percentage
-            ? n.response.content.fields.body.substring(0, (props.percentage * n.response.content.fields.body.length) / 100 ) + "..."
-            : n.response.content.fields.body)
-        setThumbnail(props.thumbnail === "yes"
-            ? "<div class=\"filtered\" style=\"background-image:url("+n.response.content.fields.thumbnail+")\" alt=\"\"></div>"
-            : "")
-            
-    })}, [])
-    let art = "/article?id="
-    return (
-  
-        <div>
-            
-            <h2><Link to={art+props.article}>{title}</Link></h2>
-            {ReactHtmlParser(thumbnail)}
-            <p class="story-copy">{ReactHtmlParser(body)}</p>
-        </div>
-   
-    )
-} 
+  // TODO: replace modern expressions with 19th century equivalents.
+  useEffect(() => {
+    getNews(props.article).then((n) => {
+      // extract content from the API response
+      const title = n.response.content.webTitle;
+      const bodyResponse = n.response.content.fields.body;
+      const body = props.percentage
+        ? trimArticle(bodyResponse, props.percentage) + continueReading(link)
+        : bodyResponse;
 
+      setTitle(title);
+      setBody(body);
+    });
+  }, []);
 
-export default Api
-export { getNews }
-export { apiKey, guardianApi }
+  return (
+    <div>
+      <h2>
+        <a href={link}>{title}</a>
+      </h2>
+      <p class="story-copy">{ReactHtmlParser(body)}</p>
+    </div>
+  );
+}
+
+export default Api;
+export { getNews };
+export { apiKey, guardianApi };

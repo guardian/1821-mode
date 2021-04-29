@@ -4,14 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Article from './Article.js'
 
 ReactDOM.render(
   <React.StrictMode>
      <BrowserRouter>
        <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/article" component={Article} />
       </Switch>
 
     </BrowserRouter>

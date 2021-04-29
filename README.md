@@ -7,6 +7,9 @@
 - [x] How it's deployed
 - [x] Write what components do
 
+## What is this all about?
+May 2021 marks the Guardian's 200 year birthday and to mark the occasion, the 4 fellows at the Product & Engineering department decided to create a 1821 version of the Guardian front page during the Hack day in April 2021. The idea won the Best Conceptual Hack category!
+
 ## Components
 
 `Api.js` renders the title and body of an article.

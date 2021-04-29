@@ -16,3 +16,7 @@ Example:
 ```jsx
 <Api article="artanddesign/2021/apr/23/damn-this-is-a-caravaggio-the-inside-story-of-an-old-master-found-in-spain" percentage="60" />
 ```
+
+## Deployment 
+* The app is currently hosted on surge(http://surge.sh) with the domain 1821.surge.sh.
+* In order to deploy any changes made to the app, run `npm build` -> `cd build` -> `echo 1821.surge.sh >CNAME` -> `surge .`

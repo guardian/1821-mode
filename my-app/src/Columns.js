@@ -12,6 +12,7 @@ import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
 import HartSonPeardCoAd from './Images/HartSonPeardCoAd.png';
 import OrchestrionAd from './Images/OrchestrionAd.png';
 import PeerlessDictionaryAd from './Images/PeerlessDictionaryAd.png';
+import SeigelsSyrupAd from './Images/SeigelsSyrupAd.png';
 
 function Columns() {
     return (
@@ -38,6 +39,7 @@ function Columns() {
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
             <img src={PearsSoapAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={SeigelsSyrupAd} alt="Old fashioned advert for Pears' Soap" />
         </div>
     )
 }

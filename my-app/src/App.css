@@ -57,6 +57,19 @@ p {
     font-size: 0.8em;
 }
 
+.story-copy p:first-child::first-letter {
+  font-family: "IM Fell English SC";
+  font-size: 2rem;
+  float: left;
+  line-height: 1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.story-copy p:first-child {
+    text-indent: 0em;
+}
+
 a {
     color: black;
 }

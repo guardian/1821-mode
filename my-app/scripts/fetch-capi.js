@@ -30,7 +30,7 @@ async function getNews(id) {
 
 const main = ()  => {
     const capiJson = Promise.all(capiIds.map(getNews)).then((res) => {
-      const filePath = path.join(__dirname, '../capi-data/all.json');
+      const filePath = path.join(__dirname, '../src/capi-data/all.json');
       fs.writeFileSync(filePath, JSON.stringify(res));
     });
 };

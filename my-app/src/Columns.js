@@ -14,27 +14,29 @@ import OrchestrionAd from './Images/OrchestrionAd.png';
 import PeerlessDictionaryAd from './Images/PeerlessDictionaryAd.png';
 import SeigelsSyrupAd from './Images/SeigelsSyrupAd.png';
 
+const articlesJson = require("./capi-data/all.json");
+    
 function Columns() {
     return (
         <div class="column-container">
-            <Api article="artanddesign/2021/apr/23/damn-this-is-a-caravaggio-the-inside-story-of-an-old-master-found-in-spain" percentage="60" />
-                <hr />
+            <Api article={articlesJson[0]} percentage="60" />
+            <hr />
             <a href="https://support.theguardian.com/" target="_blank" rel="noreferrer"><img className="contribution-cta" src={HopeIsPower} alt="Old fashioned advert" /></a>
-             <hr />
-            <Api article="technology/2021/apr/22/signal-founder-i-hacked-police-phone-cracking-tool-cellebrite" percentage="100" />
+            <hr />
+            <Api article={articlesJson[1]} percentage="100" />
             <hr />
             <img src={CarrossierAd} alt="Old fashioned advert for a Carrossier" />
             <img src={PeerlessDictionaryAd} alt="Old fashioned advert for the Peerless Dictionary" />
             <hr />
-            <Api article="lifeandstyle/2020/jan/23/petflix-and-chill-does-your-dog-need-a-streaming-service" percentage="90" />
+            <Api article={articlesJson[2]} percentage="90" />
             <hr />
             <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
             <hr />
             <img src={HarvardsTeethAd} alt="Old fashioned advert Harvard's Teeth department store" />
             <hr />
-            <Api article="fashion/2021/apr/12/hawaiian-shirts-fashion-trend-expert" />
+            <Api article={articlesJson[3]} />
             <hr />
-            <Api article="technology/2021/apr/22/ransomware-hackers-steal-plans-upcoming-apple-products" />
+            <Api article={articlesJson[4]} />
             <img src={FrancisPrestonAd} alt="Old fashioned advert for Francis Preston arms" />
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />

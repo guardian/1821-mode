@@ -28,8 +28,6 @@ function Columns() {
             <hr />
             <Api article="lifeandstyle/2020/jan/23/petflix-and-chill-does-your-dog-need-a-streaming-service" percentage="90" />
             <hr />
-            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
-            <hr />
             <img src={HarvardsTeethAd} alt="Old fashioned advert Harvard's Teeth department store" />
             <hr />
             <Api article="fashion/2021/apr/12/hawaiian-shirts-fashion-trend-expert" />
@@ -39,8 +37,9 @@ function Columns() {
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
             <img src={PuritySaltAd} alt="Old fashioned advert for Pears' Soap" />
-                <img src={PearsSoapAd} alt="Old fashioned advert for Pears' Soap" />
-                <img src={SeigelsSyrupAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={PearsSoapAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={SeigelsSyrupAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
         </div>
     )
 }

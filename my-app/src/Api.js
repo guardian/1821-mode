@@ -17,7 +17,7 @@ function Api(props) {
   const link = "https://www.theguardian.com/" + articleLink;
   const title = props.article.response.content.webTitle;
   const bodyResponse = props.article.response.content.fields.body;
-  const body = props.percentage
+  const body = props.percentage && props.percentage !== "100"
     ? trimArticle(bodyResponse, props.percentage) + continueReading(link)
     : bodyResponse;
   

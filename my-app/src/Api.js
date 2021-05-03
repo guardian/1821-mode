@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactHtmlParser from "react-html-parser";
 
 const trimArticle = (body, percent) => {

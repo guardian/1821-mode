@@ -7,7 +7,6 @@ import HopeIsPower from './Images/HopeIsPower.png';
 import HarvardsTeethAd from './Images/HarvardsTeethAd.png';
 import CarrossierAd from './Images/CarrossierAd.png';
 import LifebuoySoapAd from './Images/LifebuoySoapAd.png';
-import PearsSoapAd from './Images/PearsSoapAd.png';
 import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
 import HartSonPeardCoAd from './Images/HartSonPeardCoAd.png';
 import OrchestrionAd from './Images/OrchestrionAd.png';

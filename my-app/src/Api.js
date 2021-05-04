@@ -10,27 +10,28 @@ const continueReading = (articleID) => {
 };
 
 // replace modern words/expressions with 19th century equivalents.
-const replaceWords = (articleBody) => {
-  const mapObj = {
-    you: "thou",
-    know: "knowest"
-  };
-  let articleOldStyle = articleBody.replaceAll(/you|know/g, (matched) => {
-    return mapObj[matched]
-  });
-
-  return articleOldStyle
+const replaceWords = (text) => {
+  const rules = [
+     [/\byou\b/g, "thou"],
+     [/(from which|from where)/g, "whence"]
+  ]
+  rules.forEach(rule => {
+    const [regex, replacement] = rule
+    text = text.replace(regex, replacement)
+  })
+  return text
 }
 
 function Api(props) {
   // extract content from the API response stored in all.json
   const articleLink = props.article.response.content.id;
   const link = "https://www.theguardian.com/" + articleLink;
-  const title = props.article.response.content.webTitle;
+  const titleResponse = props.article.response.content.webTitle;
   const bodyResponse = props.article.response.content.fields.body;
   const bodyTrimmed = props.percentage
     ? trimArticle(bodyResponse, props.percentage) + continueReading(link)
     : bodyResponse;
+  const title = replaceWords(titleResponse)
   const body = replaceWords(bodyTrimmed);
   
   return (

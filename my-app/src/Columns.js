@@ -38,9 +38,8 @@ function Columns() {
             <img src={FrancisPrestonAd} alt="Old fashioned advert for Francis Preston arms" />
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
-            <img src={PuritySaltAd} alt="Old fashioned advert for Pears' Soap" />
-            <img src={PearsSoapAd} alt="Old fashioned advert for Pears' Soap" />
-            <img src={SeigelsSyrupAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={PuritySaltAd} alt="Old fashioned advert for Purity table salt" />
+            <img src={SeigelsSyrupAd} alt="Old fashioned advert for Seigels Syrup" />
             <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
         </div>
     )

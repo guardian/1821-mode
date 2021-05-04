@@ -2,8 +2,6 @@ import './App.css';
 import Header from './Header.js';
 import Columns from './Columns';
 import Footer from './Footer.js';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 
 function App() {
   return (
@@ -12,9 +10,9 @@ function App() {
         <main style={homeMain}>
           <Header />
 
-            <Columns />
+          <Columns />
             
-            <Footer />
+          <Footer />
         </main>
        
     </div>

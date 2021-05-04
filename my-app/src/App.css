@@ -18,7 +18,7 @@ h2, h3, h4, h5, h6, h7 {
 }
 
 h2 {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.2;
     padding-bottom: .5em;
     color: transparent;
@@ -54,7 +54,7 @@ p {
   margin: 0;
   font-family: 'Newsreader', serif;
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .story-copy p:first-child::first-letter {
@@ -118,7 +118,6 @@ h1 {
   text-align: center;
   font-size: 1.8em;
   color: transparent;
-  text-shadow: 0 0 1px rgba(0,0,0,0.9);
   padding: 25px 0 10px 0;
   margin: 0;
 }

@@ -31,7 +31,6 @@ function Header() {
 
 const headerStyle = {
     color: 'transparent',
-    textShadow: '0 0 1px rgba(0,0,0,0.9)',
     paddingBottom: '10px',
 }
 
@@ -39,7 +38,6 @@ const sectionOne = {
     textAlign: 'center',
     fontStyle: 'italic',
     color: 'transparent',
-    textShadow: '0 0 1px rgba(0,0,0,0.9)',
 };
 
 const flexContainer = {

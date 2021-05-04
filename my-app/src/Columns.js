@@ -4,7 +4,6 @@ import Api from './Api.js';
 
 import PuritySaltAd from './Images/PuritySaltAd.png';
 import HopeIsPower from './Images/HopeIsPower.png';
-import HarvardsTeethAd from './Images/HarvardsTeethAd.png';
 import CarrossierAd from './Images/CarrossierAd.png';
 import LifebuoySoapAd from './Images/LifebuoySoapAd.png';
 import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
@@ -29,7 +28,7 @@ function Columns() {
             <hr />
             <Api article={articlesJson[2]} percentage="90" />
             <hr />
-            <img src={HarvardsTeethAd} alt="Old fashioned advert Harvard's Teeth department store" />
+            <img src={PuritySaltAd} alt="Old fashioned advert for Purity table salt" />
             <hr />
             <Api article={articlesJson[3]} />
             <hr />
@@ -37,7 +36,6 @@ function Columns() {
             <img src={FrancisPrestonAd} alt="Old fashioned advert for Francis Preston arms" />
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
-            <img src={PuritySaltAd} alt="Old fashioned advert for Purity table salt" />
             <img src={SeigelsSyrupAd} alt="Old fashioned advert for Seigels Syrup" />
             <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
         </div>

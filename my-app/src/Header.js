@@ -13,7 +13,7 @@ function Header() {
 
     return (
             <header style={headerStyle}>
-            <div style={logoStyles}>
+            <div class="logo-styles">
                     <GuardianLogo />
                 </div>
             <hr />
@@ -56,11 +56,5 @@ const supportLinks = {
     fontWeight: 'bold',
     textDecoration: 'underline'
 }
-
-const logoStyles = {
-    width: '80%',
-    margin: '5% auto 3%',
-}
-
 
 export default Header

@@ -75,7 +75,9 @@ a {
 }
 
 hr {
-    border: 0.5px solid gray;
+    border: 0.5px solid black;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .story {
@@ -141,6 +143,14 @@ h1 a {
 
 .small-caps {
     font-family: 'IM Fell English SC', serif;
+}
+
+.header-left {
+    padding-left: 1em;
+}
+
+.header-right {
+    padding-right: 1em;
 }
 
 /* FOOTER */

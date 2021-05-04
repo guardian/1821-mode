@@ -54,7 +54,7 @@ const headerDivider = {
 
 const supportLinks = {
     fontWeight: 'bold',
-    textDecoration: 'none'
+    textDecoration: 'underline'
 }
 
 const logoStyles = {

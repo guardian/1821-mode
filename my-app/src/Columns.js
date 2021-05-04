@@ -3,7 +3,7 @@ import React from 'react'
 import Api from './Api.js';
 
 import PuritySaltAd from './Images/PuritySaltAd.png';
-import HopeIsPower from './Images/HopeIsPower.png';
+import SupportGuardianAd from './Images/SupportGuardianAd.png';
 import CarrossierAd from './Images/CarrossierAd.png';
 import LifebuoySoapAd from './Images/LifebuoySoapAd.png';
 import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
@@ -19,7 +19,7 @@ function Columns() {
         <div class="column-container">
             <Api article={articlesJson[0]} percentage="60" />
             <hr />
-            <a href="https://support.theguardian.com/" target="_blank" rel="noreferrer"><img className="contribution-cta" src={HopeIsPower} alt="Old fashioned advert" /></a>
+            <a href="https://support.theguardian.com/contribute?acquisitionData=%7B%22source%22%3A%22GUARDIAN_WEB%22%2C%22componentType%22%3A%22ACQUISITIONS_OTHER%22%2C%22componentId%22%3A%22G200_1821_front_ad%22%2C%22campaignCode%22%3A%22G200_1821_front_ad%22%7D&INTCMP=G200_1821_front_ad" target="_blank" rel="noreferrer"><img className="contribution-cta" src={SupportGuardianAd} alt="Support the Guardian" /></a>
             <hr />
             <Api article={articlesJson[1]} percentage="100" />
             <hr />

@@ -28,7 +28,7 @@ function Api(props) {
   const link = "https://www.theguardian.com/" + articleLink;
   const titleResponse = props.article.response.content.webTitle;
   const bodyResponse = props.article.response.content.fields.body;
-  const body = props.percentage && props.percentage !== "100"
+  const bodyTrimmed = props.percentage && props.percentage !== "100"
     ? trimArticle(bodyResponse, props.percentage) + continueReading(link)
     : bodyResponse;
   const title = replaceWords(titleResponse)

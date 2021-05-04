@@ -2,15 +2,11 @@ import React from 'react'
 
 import Api from './Api.js';
 
-import PuritySaltAd from './Images/PuritySaltAd.png';
 import HopeIsPower from './Images/HopeIsPower.png';
-import CarrossierAd from './Images/CarrossierAd.png';
-import LifebuoySoapAd from './Images/LifebuoySoapAd.png';
-import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
-import HartSonPeardCoAd from './Images/HartSonPeardCoAd.png';
-import OrchestrionAd from './Images/OrchestrionAd.png';
-import PeerlessDictionaryAd from './Images/PeerlessDictionaryAd.png';
-import SeigelsSyrupAd from './Images/SeigelsSyrupAd.png';
+import BasinsAd from './Images/BasinsAd.png';
+import ChurchmansAd from './Images/ChurchmansAd.png';
+import NoseReshaperAd from './Images/NoseReshaperAd.png';
+import SmokeBallAd from './Images/SmokeBallAd.png';
 
 const articlesJson = require("./capi-data/all.json");
     
@@ -19,25 +15,23 @@ function Columns() {
         <div class="column-container">
             <Api article={articlesJson[0]} percentage="60" />
             <hr />
-            <a href="https://support.theguardian.com/" target="_blank" rel="noreferrer"><img className="contribution-cta" src={HopeIsPower} alt="Old fashioned advert" /></a>
+            <a href="https://support.theguardian.com/" target="_blank" rel="noreferrer"><img className="contribution-cta" src={HopeIsPower} alt="The Guardian's 'Hope is power' campaign poster" /></a>
             <hr />
             <Api article={articlesJson[1]} percentage="100" />
             <hr />
-            <img src={CarrossierAd} alt="Old fashioned advert for a Carrossier" />
-            <img src={PeerlessDictionaryAd} alt="Old fashioned advert for the Peerless Dictionary" />
+            <img src={BasinsAd} alt="Old fashioned advert for a wash basins" />
             <hr />
             <Api article={articlesJson[2]} percentage="90" />
             <hr />
-            <img src={PuritySaltAd} alt="Old fashioned advert for Purity table salt" />
+            <img src={ChurchmansAd} alt="Old fashioned advert for Churchman's cigarettes" />
             <hr />
             <Api article={articlesJson[3]} />
             <hr />
+                <img src={NoseReshaperAd} alt="Old fashioned advert for nose reshapers" />
+                <hr />
             <Api article={articlesJson[4]} />
-            <img src={FrancisPrestonAd} alt="Old fashioned advert for Francis Preston arms" />
-            <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
-            <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
-            <img src={SeigelsSyrupAd} alt="Old fashioned advert for Seigels Syrup" />
-            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
+                <hr />
+            <img src={SmokeBallAd} alt="Old fashioned advert for carbolic smoke balls" />
         </div>
     )
 }

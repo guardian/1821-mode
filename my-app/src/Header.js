@@ -1,4 +1,5 @@
 import React from 'react'
+import GuardianLogo from './guardianLogo.js'
 
 function Header() {
     const d = new Date();
@@ -12,7 +13,9 @@ function Header() {
 
     return (
             <header style={headerStyle}>
-            <h1>The Manchester Guardian.</h1>
+            <div style={logoStyles}>
+                    <GuardianLogo />
+                </div>
             <hr />
                 <p style={sectionOne} className='header-part-one'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
                 <hr style={headerDivider} />
@@ -57,5 +60,11 @@ const supportLinks = {
     fontWeight: 'bold',
     textDecoration: 'none'
 }
+
+const logoStyles = {
+    width: '80%',
+    margin: '5% auto 3%',
+}
+
 
 export default Header

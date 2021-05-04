@@ -30,8 +30,6 @@ function Columns() {
             <hr />
             <Api article={articlesJson[2]} percentage="90" />
             <hr />
-            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
-            <hr />
             <img src={HarvardsTeethAd} alt="Old fashioned advert Harvard's Teeth department store" />
             <hr />
             <Api article={articlesJson[3]} />
@@ -40,8 +38,10 @@ function Columns() {
             <img src={FrancisPrestonAd} alt="Old fashioned advert for Francis Preston arms" />
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
+            <img src={PuritySaltAd} alt="Old fashioned advert for Pears' Soap" />
             <img src={PearsSoapAd} alt="Old fashioned advert for Pears' Soap" />
             <img src={SeigelsSyrupAd} alt="Old fashioned advert for Pears' Soap" />
+            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
         </div>
     )
 }

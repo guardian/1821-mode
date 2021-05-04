@@ -63,7 +63,7 @@ p {
   float: left;
   line-height: 1;
   padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-right: 0.2rem;
 }
 
 .story-copy p:first-child {

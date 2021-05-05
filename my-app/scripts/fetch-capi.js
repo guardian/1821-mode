@@ -17,7 +17,7 @@ const capiIds = [
     'uk-news/2021/may/04/covid-crisis-makes-mark-drakeford-most-recognisable-leader-in-22-years-of-welsh-devolution',
     'world/2021/may/05/us-threat-democracy-russia-china-global-poll',
     'uk-news/2021/may/05/scrap-thames-tunnel-or-lose-our-support-activists-tell-sadiq-khan',
-    'science/2021/may/05/mary-rose-ship-multi-ethnic-crew-tudor-england',
+    'world/2021/may/05/france-still-split-over-napoleon-as-it-marks-bicentenary-of-death',
     'media/2021/may/05/guardian-200-editors-around-the-world-happy-birthday'
 ];
 

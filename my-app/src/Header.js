@@ -17,7 +17,7 @@ function Header() {
                     <GuardianLogo />
                 </div>
             <hr />
-                <p style={sectionOne} className='header-part-one'>World Wide Web: Compiled and Published by K. VINER & CO, No. 90, York Way.</p>
+                <p style={sectionOne} className='header-part-one'>World Wide Web: Compiled and Published by K. VINER & CO, London, New York, Sydney.</p>
                 <hr style={headerDivider} />
                 <div style={flexContainer} className='header-part-two'>
                     <div style={flexItem}><p class="small-caps header-left">No. 54, 337.</p></div>

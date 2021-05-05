@@ -16,7 +16,7 @@ const replaceWords = (text) => {
     [/Covid crisis makes Mark Drakeford most recognisable Welsh leader since devolution/, "Drakeford of Wales - a leader indeed renowned"],
     [/US seen as bigger threat to democracy than Russia or China, global poll finds/, "Here be demons! A world most fearful of Americans"],
     [/Scrap Thames tunnel or lose our support, activists tell Sadiq Khan/, "New Luddites - and this time it be tunnels the target of their wrath"],
-    [/France still split over Napoleon as it marks bicentenary of death/, "On Napoleon Bonaparte - short and French, he died this day"],
+    [/France still split over Napoleon as it marks bicentenary of death/, "On Napoleon Bonaparte - a legend or a liability to the French?"],
     [/‘Stuff of legends’: editors around world salute the Guardian on 200 years/, "Some agreeable sentiments from our friends and fellows"]
   ]
   rules.forEach(rule => {

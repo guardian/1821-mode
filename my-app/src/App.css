@@ -54,7 +54,7 @@ p {
   margin: 0;
   font-family: 'Newsreader', serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .story-copy p:first-child::first-letter {
@@ -75,7 +75,9 @@ a {
 }
 
 hr {
-    border: 0.5px solid gray;
+    border: 0.5px solid black;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .story {
@@ -113,6 +115,11 @@ img {
 
 /* HEADER */
 
+.logo-styles {
+    width: 95%;
+    margin: 5% auto 3%;
+}
+
 h1 {
   font-family: 'UnifrakturCook', cursive;
   text-align: center;
@@ -136,6 +143,14 @@ h1 a {
 
 .small-caps {
     font-family: 'IM Fell English SC', serif;
+}
+
+.header-left {
+    padding-left: 1em;
+}
+
+.header-right {
+    padding-right: 1em;
 }
 
 /* FOOTER */
@@ -192,6 +207,9 @@ ul {
     }
     p {
         font-size: 0.9em;
+    }
+    .logo-styles {
+        width: 80%;
     }
     .header-part-one {
         font-size: 0.8em;

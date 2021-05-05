@@ -13,11 +13,11 @@ const showFields = (fields) => fields.join(",");
 const fieldsToShow = showFields(articleFields);
 
 const capiIds = [
-    'world/2021/may/02/rome-colosseum-to-gain-hi-tech-arena-floor',
-    'commentisfree/2021/apr/29/sometimes-waiting-is-better-than-bingeing-ask-the-millions-who-watched-line-of-duty',
-    'fashion/2021/may/02/could-you-wear-a-dress-for-100-days',
-    'world/2021/may/02/political-chaos-and-poverty-leave-south-america-at-viruss-mercy',
-    'music/2021/apr/29/billie-eilish-your-power-review-chilling-ballad-seeps-under-your-skin'
+    'society/2021/may/04/no-one-judges-you-out-here-fishing-prescribed-for-nhs-patients',
+    'uk-news/2021/may/04/covid-crisis-makes-mark-drakeford-most-recognisable-leader-in-22-years-of-welsh-devolution',
+    'uk-news/2021/may/05/scrap-thames-tunnel-or-lose-our-support-activists-tell-sadiq-khan',
+    'science/2021/may/05/mary-rose-ship-multi-ethnic-crew-tudor-england',
+    'media/2021/may/05/guardian-200-editors-around-the-world-happy-birthday'
 ];
 
 async function getNews(id) {

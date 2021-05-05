@@ -13,7 +13,7 @@ const continueReading = (articleID) => {
 const replaceWords = (text) => {
   const rules = [
     [/‘No one judges you out here’: fishing prescribed for NHS patients/, "Hear ye! Fishing be well for a hearty constitution"],
-    [/Covid crisis makes Mark Drakeford most recognisable Welsh leader since devolution/, "Drakeford of Wales: a leader indeed renowned"],
+    [/Covid crisis makes Mark Drakeford most recognisable Welsh leader since devolution/, "Drakeford of Wales - a leader indeed renowned"],
     [/US seen as bigger threat to democracy than Russia or China, global poll finds/, "Here be demons! A world most fearful of Americans"],
     [/Scrap Thames tunnel or lose our support, activists tell Sadiq Khan/, "New Luddites - and this time it be tunnels the target of their wrath"],
     [/France still split over Napoleon as it marks bicentenary of death/, "On Napoleon Bonaparte - short and French, he died this day"],

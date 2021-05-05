@@ -11,10 +11,7 @@ const continueReading = (articleID) => {
 
 // replace modern words/expressions with 19th century equivalents.
 const replaceWords = (text) => {
-  const rules = [
-     [/\byou\b/g, "thou"],
-     [/(from which|from where)/g, "whence"]
-  ]
+  const rules = []
   rules.forEach(rule => {
     const [regex, replacement] = rule
     text = text.replace(regex, replacement)

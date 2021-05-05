@@ -5,7 +5,6 @@ import Api from './Api.js';
 import PuritySaltAd from './Images/PuritySaltAd.png';
 import HopeIsPower from './Images/HopeIsPower.png';
 import CarrossierAd from './Images/CarrossierAd.png';
-import LifebuoySoapAd from './Images/LifebuoySoapAd.png';
 import FrancisPrestonAd from './Images/FrancisPrestonAd.png';
 import HartSonPeardCoAd from './Images/HartSonPeardCoAd.png';
 import OrchestrionAd from './Images/OrchestrionAd.png';
@@ -37,7 +36,6 @@ function Columns() {
             <img src={HartSonPeardCoAd} alt="Old fashioned advert for communion plate manufacturers" />
             <img src={OrchestrionAd} alt="Old fashioned advert for organ builders" />
             <img src={SeigelsSyrupAd} alt="Old fashioned advert for Seigels Syrup" />
-            <img src={LifebuoySoapAd} alt="Old fashioned advert for Lifebuoy Soap" />
         </div>
     )
 }

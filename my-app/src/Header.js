@@ -110,7 +110,6 @@ const headerDivider = {
 
 const ctaStyles = {
     color: 'black',
-    // fontFamily: 'IM Fell English SC, serif',
     textAlign: 'center',
     marginLeft: '0.2em',
     '&:hover': {
